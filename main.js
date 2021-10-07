@@ -12,7 +12,7 @@ function getTime() {
 
   const hours = time.getHours();
   const hourHand = document.querySelector(".hour-hand");
-  const hourDeg = (hours / 60) * 360 + 90;
+  const hourDeg = (hours / 12) * 360 + 90;
 
   hourHand.style.transform = `rotate(${hourDeg}deg)`;
 }

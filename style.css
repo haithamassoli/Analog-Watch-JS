@@ -1,5 +1,5 @@
 html {
-  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background: #000000 url(./bg.jpg);
   background-size: cover;
   font-family: "helvetica neue";
   text-align: center;
@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 2rem;
   display: flex;
   flex: 1;
@@ -35,11 +36,26 @@ body {
 }
 
 .hand {
-  width: 50%;
-  height: 6px;
-  background: black;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   transform: rotate(90deg);
   transform-origin: right;
+}
+
+.min-hand {
+  left: 15%;
+  width: 35%;
+  height: 4px;
+}
+
+.hour-hand {
+  left: 30%;
+  width: 20%;
+  height: 6px;
+}
+
+.second-hand {
+  width: 50%;
+  height: 2px;
 }
